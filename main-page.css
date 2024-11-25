@@ -1,11 +1,17 @@
-body {
+/* Reset */
+body, h1, h2, p, ul, li, a, button {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f5f5f5;
-    line-height: 1.6;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -24,12 +30,7 @@ body {
 .navbar-links {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-links li {
-    margin-left: 20px;
+    gap: 20px;
 }
 
 .navbar-links a {
@@ -48,9 +49,9 @@ body {
     color: #B22222;
     border: none;
     padding: 10px 20px;
-    cursor: pointer;
     font-size: 1em;
     border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -59,6 +60,7 @@ body {
     color: white;
 }
 
+/* Hero Section */
 .hero {
     text-align: center;
     padding: 100px 20px;
@@ -92,5 +94,41 @@ body {
     color: white;
 }
 
+/* Features Section */
+#features {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
 
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
+.feature-box {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box h3 {
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 1em;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}

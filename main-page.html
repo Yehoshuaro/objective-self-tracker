@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Objective Self Tracker</title>
     <link rel="stylesheet" href="main-page.css">
 
 </head>
 <body>
-
 <nav class="navbar">
     <div class="navbar-logo">🔥 Objective Self Tracker</div>
     <ul class="navbar-links">
@@ -16,15 +16,47 @@
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="navbar-button">Login</button>
+    <button class="navbar-button" id="login-btn">Login</button>
 </nav>
 
-<div id="home">
+<section id="home" class="hero">
     <h1>Welcome to Objective Self Tracker</h1>
     <p>Track your progress and achieve your goals!</p>
-</div>
+    <button class="cta-button" id="learn-more-btn">Learn More</button>
+</section>
 
+<section id="features">
+    <h2>Features</h2>
+    <div class="features-container">
+        <div class="feature-box">
+            <h3>Personalized Tracking</h3>
+            <p>Monitor your growth with monthly insights and feedback.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Data Visualization</h3>
+            <p>Beautiful charts and tables for easy understanding.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Note Keeping</h3>
+            <p>Add detailed notes for each month and analyze your progress.</p>
+        </div>
+    </div>
+</section>
 
+<section id="about">
+    <h2>About</h2>
+    <p>Objective Self Tracker is your personal assistant for self-awareness and growth.</p>
+</section>
 
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Reach us at: <a href="mailto:support@objectiveselftracker.com">support@objectiveselftracker.com</a></p>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2024 Objective Self Tracker. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
